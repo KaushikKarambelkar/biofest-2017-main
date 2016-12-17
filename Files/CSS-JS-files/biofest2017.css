@@ -1,0 +1,25 @@
+#menu {
+	display: inline-block;
+	width: calc(100% / 4)
+}
+
+#events {
+	background-color: #ff0000;
+}
+
+#about {
+	background-color: #00ff00;
+}
+
+#contactus {
+	background-color: #0000ff;
+}
+
+#theteam {
+	background-color: #00ffff;
+}
+
+#events #about #theteam #contactus {
+	width: 25%;
+	height:100%;
+}
