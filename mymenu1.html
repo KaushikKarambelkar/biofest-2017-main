@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="sym">SYMPOSIUM</div>
+	<div id="eve">EVENTS</div>
+	<div id="reg">REGISTER</div>​
+	<div id="spons">SPONSERS</div>
+	<div id="cont">CONTACT US</div>
+	<div id="team">THE TEAM</div>
+
+<style type="text/css">
+	body { height:100%; margin:0; padding:0%; color: white; font-family: impact }
+		div { position:fixed; width:16.67%; height:100%; padding-top: 300px;  }
+		#sym { top:0;   left:0;   background:orange; text-align: center;  }
+		#eve { top:0;   left:16.67%; background:blue; text-align: center;    }
+		#reg { top:0;   left:33.34%;  background:green; text-align: center;   }
+		#spons { top:0;   left:50.01%; background:red; text-align: center;     }
+		#cont { top:0;   left:66.68%; background:purple; text-align: center;   }
+		#team { top:0;   left:83.35%; background:grey; text-align: center;     }   
+</style>
+
+<script type="text/javascript">
+	function fullscreenanimation(e)
+  {   
+    page=e;
+    if(e==2)
+    {
+      document.getElementById('sym').style.zIndex="1";
+      document.getElementById('eve').style.zIndex="3";
+      document.getElementById('reg').style.zIndex="3";
+      document.getElementById('spons').style.zIndex="1";
+      document.getElementById('cont').style.zIndex="1";
+      document.getElementById('team').style.zIndex="1";
+        document.getElementById('formstyle_animate').style.zIndex="3";
+      document.getElementById('login').style.webkitAnimationName="fullscreenlogin";
+      document.getElementById('view_btn5').style.webkitAnimationName="slidein_view";
+      document.getElementById('logindetails').style.webkitAnimationName="slidein_view";
+      document.getElementById('formstyle_animate').style.webkitAnimationName="slideout_view";
+      document.getElementById('login').style.animationName="fullscreenlogin";
+      document.getElementById('view_btn5').style.animationName="slidein_view";
+      document.getElementById('logindetails').style.animationName="slidein_view";
+      document.getElementById('formstyle_animate').style.animationName="slideout_view";
+
+
+
+    }
+</script>
+</body>
+</html>
