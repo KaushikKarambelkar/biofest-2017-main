@@ -64,19 +64,10 @@ body {
  }
 
  #showmenu {
-	position:absolute;
-    bottom:25%;
-    right:43%;
-    font-size:1vw;
-    background-color:#ecf0f1;
-    border:2px solid white;
-    border-radius:100px;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:10px;
-    padding-bottom:10px;
-    cursor:pointer;
-    color:#000000;
+ 	left: 2%; 
+ 	top:2%; 
+ 	position: absolute;
+ 	cursor: pointer;
   }
 
 .evemenu {
