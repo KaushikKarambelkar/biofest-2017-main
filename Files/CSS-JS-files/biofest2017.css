@@ -1,25 +1,192 @@
-#menu {
-	display: inline-block;
-	width: calc(100% / 4)
+body {
+ 	height:100%; 
+ 	margin:0; 
+ 	padding:0%; 
+ 	color: white; 
+ 	font-family: impact
 }
 
-#events {
-	background-color: #ff0000;
+#sym { 
+	top:0;  
+	left:0;  
+	background:orange;
+	text-align: center;  
 }
 
-#about {
-	background-color: #00ff00;
+#eve {
+ 	top:0;
+ 	left:20%;
+ 	background:blue;
+ 	text-align: center;
 }
 
-#contactus {
-	background-color: #0000ff;
+#spons { 
+	top:0;   
+	left:40%; 
+	background:red; 
+	text-align: center;
 }
 
-#theteam {
-	background-color: #00ffff;
+#cont { 
+	top:0;
+	left:60%; 
+	background:purple; 
+	text-align: center;   
 }
 
-#events #about #theteam #contactus {
-	width: 25%;
-	height:100%;
+#team {
+	 top:0;   
+	 left:80%;
+	 background:grey;
+	 text-align: center;
+}
+
+#backiconmenu {
+	display: none;
+	width:2%;
+	height:2%;
+	top: 2%;
+	left: 2%;
+}
+
+.menu {
+	display: none;
+	font-size:2vw;
+ 	position:fixed; 
+ 	width:20%; 
+ 	height:100%; 
+ 	padding-top: 300px;  
+ 	cursor:pointer;
+ }
+
+ .firstletterinmenu {
+ 	font-size: 3vw;
+ }
+
+ #showmenu {
+	position:absolute;
+    bottom:25%;
+    right:43%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:100px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+
+.evemenu {
+	display: none;
+	position:fixed; 
+	width:11.11%; 
+	height:100%; 
+	font-size: 1.6vw;   
+	padding-top: 300px;
+	cursor: pointer;
+}
+
+.firstletterinevents {
+	font-size: 2.5vw;
+}
+
+#forensics { 
+	top:0;   
+	left:0;   
+	background:orange; 
+	text-align: center; 
+}
+
+#streax { 
+	top:0;
+	left:11.11%; 
+	background:blue; 
+	text-align: center;    
+}
+
+#paperposter { 
+	top:0;   
+	left:22.22%;  
+	background:green; 
+	text-align: center;   
+}
+
+#lectures { 
+	top:0;   
+	left:33.33%; 
+	background:red; 
+	text-align: center;     
+}
+
+#workshops { 
+	top:0;   
+	left:44.44%; 
+	background:purple; 
+	text-align: center;   
+}
+
+#idp { 
+	top:0;   
+	left:55.55%; 
+	background:grey; 
+	text-align: center;     
+} 
+
+#quiz { 
+	top:0;   
+	left:66.66%; 
+	background:black; 
+	text-align: center;     
+}
+
+#biobiz { 
+	top:0;   
+	left:77.77%; 
+	background:yellow; 
+	text-align: center;     
+}   
+
+#gbc { 
+	top:0;   
+	left:88.88%; 
+	background:pink; 
+	text-align: center;     
+} 
+
+.symmenu {
+	display:none;
+	font-size:2.5vw;
+	position:fixed; 
+	width:33.34%; 
+	height:100%; 
+	padding-top: 300px;
+	cursor: pointer;
+}
+
+.firstletterinsymmenu {
+	font-size: 3.7vw;
+}
+
+#pan { 
+	top:0;   
+	left:0;   
+	background:red; 
+	text-align: center;  
+}
+
+#wor { 
+	top:0;   
+	left:33.34%; 
+	background:blue; 
+	text-align: center;    
+}
+
+#meve { 
+	top:0;   
+	left:66.67%;  
+	background:green; 
+	text-align: center;   
 }
