@@ -190,3 +190,7 @@ body {
 	background:green; 
 	text-align: center;   
 }
+
+#pgforensics {
+	display: none;
+}
