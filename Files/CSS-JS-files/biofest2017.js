@@ -62,9 +62,29 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+                  $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
-                     "width": "100%"
-                  },1000);
+                     "width": "100%",
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  }, 500, function(){
+                     $("#forensicsdescription").fadeIn(500, function(){
+                        $("#registrationforensics").fadeIn(500);
+                        $("#rulesforensics").fadeIn(500, function(){
+                           $("#forensicscontact").fadeIn();
+                           $("#forensicscoord").fadeIn();
+                           $("#callforensics").fadeIn();
+                           $("#whatsappforensics").fadeIn();
+                           $("#emailforensics").fadeIn(500, function(){
+                              $("#archiveforensics").fadeIn();
+                           });
+                        });
+                     });
+               });
             });
          });
 
@@ -80,10 +100,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+                  $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -99,10 +126,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+                  $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -118,10 +152,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+                  $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -137,10 +178,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+                  $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -156,10 +204,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+               $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -175,10 +230,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#streax").hide(1000);
             $("#biobiz").hide(1000);
             $("#gbc").hide(1000, function(){
+               $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -194,10 +256,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#streax").hide(1000);
             $("#gbc").hide(1000, function(){
+               $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 
@@ -213,10 +282,17 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#quiz").hide(1000);
             $("#biobiz").hide(1000);
             $("#streax").hide(1000, function(){
+               $(".firstletterinevents").animate({
+                     "font-size": "3.2vw"
+                  });
+
                   $(".evemenu").animate({
+                     "left":"0",
                      "width": "100%",
-                     "left": "0"
-                  },1000);
+                     "font-size": "2.5vw",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
             });
          });
 

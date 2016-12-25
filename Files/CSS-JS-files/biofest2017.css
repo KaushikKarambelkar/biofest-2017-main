@@ -182,6 +182,108 @@ body {
 	text-align: center;   
 }
 
-#pgforensics {
-	display: none;
-}
+/* Below css for forensics page */
+
+	#registrationforensics {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#registrationforensics:hover {
+		background-color: #ff5911;
+		text-decoration: underline;
+	}
+
+	#rulesforensics{
+		display:none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#rulesforensics:hover {
+		background-color: #ff5911;
+		text-decoration: underline;
+	}
+
+	#archiveforensics {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#callforensics {
+		display: none;
+		position:absolute;
+		height: 40px;
+		width: 40px;
+		right:165px;
+		bottom: 25px;
+	}
+
+	#whatsappforensics {
+		display: none;
+		position:absolute;
+		height: 40px;
+		width: 40px;
+		right: 120px;
+		bottom:25px;
+	}
+
+	#emailforensics {
+		display: none;
+		position:absolute;
+		height: 40px;
+		width: 40px;
+		right:75px;
+		bottom: 25px;
+	}
+
+	#forensicscoord {
+		display: none;
+		position: absolute;
+		right: 220px;
+		bottom: 32px;
+		font-size: 1.8vw;
+		color: black;
+	}
+
+	#forensicscontact {
+		display: none;
+		position:absolute;
+		right:50px;
+		bottom:50px;
+	}
+
+	#forensicsdescription {
+		display: none;
+		position: absolute;
+		border:2px solid black;
+		top:30%;
+		left:5%;
+		right:55%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+	}
+
