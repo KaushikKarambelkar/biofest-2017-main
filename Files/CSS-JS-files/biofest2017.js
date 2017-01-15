@@ -72,21 +72,18 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "padding-top": "4%",
                      "padding-right": "80%"
                   }, 500, function(){
-                     $("#forensicsdescription").fadeIn(500, function(){
-                        $("#registrationforensics").fadeIn(500);
-                        $("#rulesforensics").fadeIn(500, function(){
-                           $("#forensicscontact").fadeIn();
-                           $("#forensicscoord").fadeIn();
-                           $("#callforensics").fadeIn();
-                           $("#whatsappforensics").fadeIn();
-                           $("#emailforensics").fadeIn(500, function(){
-                              $("#archiveforensics").fadeIn();
-                           });
-                        });
+                        $("#forensicsdescription").fadeIn(200);
+                        $("#forensicsregistration").fadeIn(200);
+                        $("#forensicsrules").fadeIn(200);
+                        $("#forensicscontact").fadeIn(200);
+                        $("#forensicscall").fadeIn(200);
+                        $("#forensicsemail").fadeIn(200);
+                        $("#forensicsphn").fadeIn(200);
+                        $("#forensicsarchive").fadeIn(200);
+                        $("#forensicsemailid").fadeIn(200);
                      });
+                  });
                });
-            });
-         });
 
          //Shows streax page when clicked
 
@@ -110,6 +107,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#streaxdescription").fadeIn(200);
+                     $("#streaxregistration").fadeIn(200);
+                     $("#streaxrules").fadeIn(200);
+                     $("#streaxcontact").fadeIn(200);
+                     $("#streaxcall").fadeIn(200);
+                     $("#streaxemail").fadeIn(200);
+                     $("#streaxphn").fadeIn(200);
+                     $("#streaxarchive").fadeIn(200);
+                     $("#streaxemailid").fadeIn(200);
                   });
             });
          });

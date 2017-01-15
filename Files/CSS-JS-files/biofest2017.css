@@ -6,6 +6,8 @@ body {
  	font-family: impact
 }
 
+/* Below CSS for Main Menu #MainMenuCSS */
+
 #sym { 
 	top:0;  
 	left:0;  
@@ -63,13 +65,16 @@ body {
  	font-size: 3vw;
  }
 
+/*
  #showmenu {
  	left: 2%; 
  	top:2%; 
  	position: absolute;
  	cursor: pointer;
   }
+*/
 
+/* Below CSS for events menu #EventsMenuCSS */
 .evemenu {
 	display: none;
 	position:fixed; 
@@ -147,6 +152,8 @@ body {
 	text-align: center;     
 } 
 
+/* Below CSS for Symposium Menu #SymposiumMenuCSS */
+
 .symmenu {
 	display:none;
 	font-size:2.5vw;
@@ -182,9 +189,9 @@ body {
 	text-align: center;   
 }
 
-/* Below css for forensics page */
+/* Below CSS for Forensics Page #ForensicsCSS */
 
-	#registrationforensics {
+	#forensicsregistration {
 		display: none;
 		position:absolute;
 		bottom:80%;
@@ -196,12 +203,12 @@ body {
 		font-size: 1.5vw;
 	}
 
-	#registrationforensics:hover {
-		background-color: #ff5911;
-		text-decoration: underline;
+	#forensicsregistration:hover {
+		background-color: black;
+		color: orange;
 	}
 
-	#rulesforensics{
+	#forensicsrules {
 		display:none;
 		position:absolute;
 		bottom:80%;
@@ -213,12 +220,12 @@ body {
 		font-size: 1.5vw;
 	}
 
-	#rulesforensics:hover {
-		background-color: #ff5911;
-		text-decoration: underline;
+	#forensicsrules:hover {
+		background-color: black;
+		color: orange;
 	}
 
-	#archiveforensics {
+	#forensicsarchive {
 		display: none;
 		position:absolute;
 		bottom:30%;
@@ -230,54 +237,114 @@ body {
 		color: black;
 	}
 
-	#callforensics {
-		display: none;
-		position:absolute;
-		height: 40px;
-		width: 40px;
-		right:165px;
-		bottom: 25px;
-	}
-
-	#whatsappforensics {
-		display: none;
-		position:absolute;
-		height: 40px;
-		width: 40px;
-		right: 120px;
-		bottom:25px;
-	}
-
-	#emailforensics {
-		display: none;
-		position:absolute;
-		height: 40px;
-		width: 40px;
-		right:75px;
-		bottom: 25px;
-	}
-
-	#forensicscoord {
+	#forensicsdescription {
 		display: none;
 		position: absolute;
-		right: 220px;
-		bottom: 32px;
-		font-size: 1.8vw;
+		top:25%;
+		left:5%;
+		right:55%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
 		color: black;
+		font-size: 1.8vw;
+		text-align: left;
 	}
 
 	#forensicscontact {
 		display: none;
 		position:absolute;
-		right:50px;
-		bottom:50px;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
 	}
 
-	#forensicsdescription {
+	#forensicscall {
 		display: none;
 		position: absolute;
-		border:2px solid black;
-		top:30%;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#forensicsemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#forensicsphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#forensicsemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+/* Below CSS for Streax Page #StreaxCSS */
+	#streaxregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#streaxregistration:hover {
+		background-color: black;
+		color: blue;
+	}
+
+	#streaxrules {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#streaxrules:hover {
+		background-color: black;
+		color:blue;
+	}
+
+	#streaxarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#streaxdescription {
+		display: none;
+		position: absolute;
+		top:25%;
 		left:5%;
 		right:55%;
 		bottom: 20%;
@@ -285,5 +352,48 @@ body {
 		border-radius:50px;
 		color: black;
 		font-size: 2.5vw;
+		text-align: center;
 	}
 
+	#streaxcontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#streaxcall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#streaxemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#streaxphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#streaxemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}

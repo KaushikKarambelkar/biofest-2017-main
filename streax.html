@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript" src="/Files/CSS-JS-files/jquery-3.1.1.min.js"></script>
 	<style type="text/css">
 
 	body {
@@ -23,17 +24,17 @@
 
 	}
 
-	#forensics {
+	#streax {
 		top:0;   
 		left:0;   
-		background:orange; 
+		background:blue; 
 	}
 
 	.firstletterinevents {
 		font-size: 3.2vw;
 	}
 
-	.registration{
+	#streaxregistration {
 		position:absolute;
 		bottom:80%;
 		right:10%;
@@ -44,13 +45,12 @@
 		font-size: 1.5vw;
 	}
 
-	.registration:hover {
+	#streaxregistration:hover {
 		background-color: black;
-		text-decoration: underline;
-		color:orange;
+		color: blue;
 	}
 
-	.rules{
+	#streaxrules{
 		position:absolute;
 		bottom:80%;
 		right:20%;
@@ -61,13 +61,12 @@
 		font-size: 1.5vw;
 	}
 
-	.rules:hover {
+	#streaxrules:hover {
 		background-color: black;
-		color: orange;
-		text-decoration: underline;
+		color:blue;
 	}
 
-	.archive{
+	#streaxarchive {
 		position:absolute;
 		bottom:30%;
 		right:10%;
@@ -78,10 +77,9 @@
 		color: black;
 	}
 
-	#forensicsdescription {
+	#streaxdescription {
 		position: absolute;
-		border:2px solid black;
-		top:30%;
+		top:25%;
 		left:5%;
 		right:55%;
 		bottom: 20%;
@@ -91,8 +89,7 @@
 		font-size: 2.5vw;
 	}
 
-
-	.forensicscontact {
+	#streaxcontact {
 		position:absolute;
 		right:150px;
 		bottom:75px;
@@ -101,7 +98,7 @@
 		color: #000000;	
 	}
 
-	#forensicscall {
+	#streaxcall {
 		position: absolute;
 		bottom:10px;
 		right: 100px;
@@ -109,7 +106,7 @@
 		width: 30px;
 	}
 
-	#forensicsemail {
+	#streaxemail {
 		position: absolute;
 		bottom: 10px;
 		right:400px;
@@ -117,51 +114,55 @@
 		width: 30px;
 	}
 
-	#forensicsphn {
+	#streaxphn {
 		position:absolute;
 		bottom:15px;
 		right: -3px;
 		font-family: impact;
 	}
 
-	#forensicsemailid {
+	#streaxemailid {
 		position: absolute;
 		bottom: 15px;
 		right: 150px;
 	}
 
-
 	</style>
 </head>
 <body>
-	<div class="evemenu" id="forensics">
-		<div id="forensicsdescription">
-			"Blah blah blah blah some quote blah blah blah"
-			<br><br>
-			blah blah blah, bl-bl-bl-blah blah blah blah, flagship event blah blah blah
+	<div class="evemenu" id="streax">
+		<div id="streaxdescription">
+		<font size="6vw">
+		"The art of the living..."
+		</font>
+		<br><br>
+		<font size="5vw">
+		See how close you can get to the Mona Lisa, with petri plates as your sketchpads. 
+		This Biofest, play around with bacteria and watch as they grow into striking patterns of vibrant colour.
+		</font>
 		</div>
-		<font class="firstletterinevents">F</font>ORENSICS
-		<div id="forensicspage">
+		<font class="firstletterinevents">S</font>TREAX
+		<div id="streaxpage">
 			<a href="#">
-			<div class="registration">
+			<div id="streaxregistration">
 				Register
 			</div>
 			</a>
 			<a href="#">
-			<div class="rules">
+			<div id="streaxrules">
 				Rules
 			</div>
 			</a>
-			<div class="archive">
+			<div id="streaxarchive">
 				<font>ARCHIVE. ADD RELEVANT IMAGE AND LINK</font>
 			</div>
-			<div class="forensicscontact">
-				<img id="forensicscall" src="Files/call-icon.png">
-				<div id="forensicsphn">9176416316</div>
-				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="forensicsemail" src="Files/email-icon.png"></a>
-				<div id="forensicsemailid">kaushik.iitmadras@gmail.com</div>
+			<div id="streaxcontact">
+				<img id="streaxcall" src="Files/call-icon.png">
+				<div id="streaxphn">9176416316</div>
+				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="streaxemail" src="Files/email-icon.png"></a>
+				<div id="streaxemailid">kaushik.iitmadras@gmail.com</div>
 			</div>
 		</div>
 	</div>
 </body>
-</html>	
+</html>
