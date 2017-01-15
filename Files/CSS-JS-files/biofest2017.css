@@ -82,7 +82,6 @@ body {
 	height:100%; 
 	font-size: 1.6vw;   
 	padding-top: 300px;
-	cursor: pointer;
 }
 
 .firstletterinevents {
@@ -103,7 +102,7 @@ body {
 	text-align: center;    
 }
 
-#paperposter { 
+#paperandposter { 
 	top:0;   
 	left:22.22%;  
 	background:green; 
@@ -134,7 +133,7 @@ body {
 #quiz { 
 	top:0;   
 	left:66.66%; 
-	background:black; 
+	background:brown; 
 	text-align: center;     
 }
 
@@ -392,6 +391,737 @@ body {
 	}
 
 	#streaxemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for Paper and Poster Page #PaperAndPosterCSS */
+
+	#paperandposterregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#paperandposterregistration:hover {
+		background-color: black;
+		color: green;
+	}
+
+	#paperandposterrules {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#paperandposterrules:hover {
+		background-color: black;
+		color:green;
+	}
+
+	#paperandposterarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#paperandposterdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:5%;
+		right:55%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+		text-align: left;
+	}
+
+	#paperandpostercontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#paperandpostercall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#paperandposteremail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#paperandposterphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#paperandposteremailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for Lectures Page #LecturesCSS */
+
+	#lecturesregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#lecturesregistration:hover {
+		background-color: black;
+		color: red;
+	}
+
+	#lecturesrules{
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#lecturesrules:hover {
+		background-color: black;
+		color:red;
+	}
+
+	#lecturesarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#lecturesdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+		text-align: left;
+	}
+
+	#lecturescontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#lecturescall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#lecturesemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#lecturesphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#lecturesemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for Workshops Page #WorkshopsCSS */
+
+	#workshopsregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#workshopsregistration:hover {
+		background-color: black;
+		color: purple;
+	}
+
+	#workshopsrules {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#workshopsrules:hover {
+		background-color: black;
+		color: purple;
+	}
+
+	#workshopsarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#workshopsdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+	}
+
+	#workshopscontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#workshopscall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#workshopsemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#workshopsphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#workshopsemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for IDP #IDPCSS */
+
+	#idpregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#idpregistration:hover {
+		background-color: black;
+		color: grey;
+	}
+
+	#idprules{
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#idprules:hover {
+		background-color: black;
+		color: grey;
+	}
+
+	#idparchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#idpdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+	}
+
+	#idpcontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#idpcall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#idpemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#idpphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#idpemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for Quiz Page #QuizCSS */
+
+	#quizregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#quizregistration:hover {
+		background-color: black;
+		color: brown;
+	}
+
+	#quizrules{
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#quizrules:hover {
+		background-color: black;
+		color: brown;
+	}
+
+	#quizarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#quizdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+	}
+
+	#quizcontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#quizcall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#quizemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#quizphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#quizemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for BioBiz Page #BioBizCSS */
+
+	#biobizregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#biobizregistration:hover {
+		background-color: black;
+		color: yellow;
+	}
+
+	#biobizrules{
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#biobizrules:hover {
+		background-color: black;
+		color: yellow;
+	}
+
+	#biobizarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#biobizdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+	}
+
+	#biobizcontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#biobizcall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#biobizemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#biobizphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#biobizemailid {
+		display: none;
+		position: absolute;
+		bottom: 15px;
+		right: 150px;
+	}
+
+	/* Below CSS for GBC page #GBCCSS */
+
+	#gbcregistration {
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:10%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color:black;
+		font-size: 1.5vw;
+	}
+
+	#gbcregistration:hover {
+		background-color: black;
+		color: pink;
+	}
+
+	#gbcrules{
+		display: none;
+		position:absolute;
+		bottom:80%;
+		right:20%;
+		padding-bottom: 10px;padding-top: 10px;padding-right: 20px;padding-left: 20px;
+		border : 2px solid black;
+		border-radius: 60px;
+		color: black;
+		font-size: 1.5vw;
+	}
+
+	#gbcrules:hover {
+		background-color: black;
+		color: pink;
+	}
+
+	#gbcarchive {
+		display: none;
+		position:absolute;
+		bottom:30%;
+		right:10%;
+		padding-bottom: 130px;padding-top: 130px; padding-left: 10px; padding-right: 10px;
+		border : 2px solid black;
+		border-radius: 60px;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+	#gbcdescription {
+		display: none;
+		position: absolute;
+		top:25%;
+		left:2%;
+		right:45%;
+		bottom: 20%;
+		padding-top: 40px; padding-bottom: 40px;padding-left: 60px; padding-right: 60px;
+		border-radius:50px;
+		color: black;
+		font-size: 2.5vw;
+		text-align: left;
+	}
+
+	#gbccontact {
+		display: none;
+		position:absolute;
+		right:150px;
+		bottom:75px;
+		font-family: impact;
+		font-size: 1.5vw;
+		color: #000000;	
+	}
+
+	#gbccall {
+		display: none;
+		position: absolute;
+		bottom:10px;
+		right: 100px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#gbcemail {
+		display: none;
+		position: absolute;
+		bottom: 10px;
+		right:400px;
+		height: 30px;
+		width: 30px;
+	}
+
+	#gbcphn {
+		display: none;
+		position:absolute;
+		bottom:15px;
+		right: -3px;
+		font-family: impact;
+	}
+
+	#gbcemailid {
 		display: none;
 		position: absolute;
 		bottom: 15px;

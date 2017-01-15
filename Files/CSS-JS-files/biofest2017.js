@@ -55,7 +55,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#forensics").click(function(){
 
             $("#streax").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -90,7 +90,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#streax").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -123,7 +123,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          //Shows paper and poster page when clicked
 
-         $("#paperposter").click(function(){
+         $("#paperandposter").click(function(){
 
             $("#forensics").hide(1000);
             $("#streax").hide(1000);
@@ -143,6 +143,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#paperandposterdescription").fadeIn(200);
+                     $("#paperandposterregistration").fadeIn(200);
+                     $("#paperandposterrules").fadeIn(200);
+                     $("#paperandpostercontact").fadeIn(200);
+                     $("#paperandpostercall").fadeIn(200);
+                     $("#paperandposteremail").fadeIn(200);
+                     $("#paperandposterphn").fadeIn(200);
+                     $("#paperandposterarchive").fadeIn(200);
+                     $("#paperandposteremailid").fadeIn(200);
                   });
             });
          });
@@ -152,7 +162,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#lectures").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#streax").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -169,6 +179,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#lecturesdescription").fadeIn(200);
+                     $("#lecturesregistration").fadeIn(200);
+                     $("#lecturesrules").fadeIn(200);
+                     $("#lecturescontact").fadeIn(200);
+                     $("#lecturescall").fadeIn(200);
+                     $("#lecturesemail").fadeIn(200);
+                     $("#lecturesphn").fadeIn(200);
+                     $("#lecturesarchive").fadeIn(200);
+                     $("#lecturesemailid").fadeIn(200);
                   });
             });
          });
@@ -178,7 +198,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#workshops").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#streax").hide(1000);
             $("#idp").hide(1000);
@@ -195,6 +215,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#workshopsdescription").fadeIn(200);
+                     $("#workshopsregistration").fadeIn(200);
+                     $("#workshopsrules").fadeIn(200);
+                     $("#workshopscontact").fadeIn(200);
+                     $("#workshopscall").fadeIn(200);
+                     $("#workshopsemail").fadeIn(200);
+                     $("#workshopsphn").fadeIn(200);
+                     $("#workshopsarchive").fadeIn(200);
+                     $("#workshopsemailid").fadeIn(200);
                   });
             });
          });
@@ -204,7 +234,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#idp").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#streax").hide(1000);
@@ -221,6 +251,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#idpdescription").fadeIn(200);
+                     $("#idpregistration").fadeIn(200);
+                     $("#idprules").fadeIn(200);
+                     $("#idpcontact").fadeIn(200);
+                     $("#idpcall").fadeIn(200);
+                     $("#idpemail").fadeIn(200);
+                     $("#idpphn").fadeIn(200);
+                     $("#idparchive").fadeIn(200);
+                     $("#idpemailid").fadeIn(200);
                   });
             });
          });
@@ -230,7 +270,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#quiz").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -247,6 +287,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#quizdescription").fadeIn(200);
+                     $("#quizregistration").fadeIn(200);
+                     $("#quizrules").fadeIn(200);
+                     $("#quizcontact").fadeIn(200);
+                     $("#quizcall").fadeIn(200);
+                     $("#quizemail").fadeIn(200);
+                     $("#quizphn").fadeIn(200);
+                     $("#quizarchive").fadeIn(200);
+                     $("#quizemailid").fadeIn(200);
                   });
             });
          });
@@ -256,7 +306,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#biobiz").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -273,6 +323,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#biobizdescription").fadeIn(200);
+                     $("#biobizregistration").fadeIn(200);
+                     $("#biobizrules").fadeIn(200);
+                     $("#biobizcontact").fadeIn(200);
+                     $("#biobizcall").fadeIn(200);
+                     $("#biobizemail").fadeIn(200);
+                     $("#biobizphn").fadeIn(200);
+                     $("#biobizarchive").fadeIn(200);
+                     $("#biobizemailid").fadeIn(200);
                   });
             });
          });
@@ -282,7 +342,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#gbc").click(function(){
 
             $("#forensics").hide(1000);
-            $("#paperposter").hide(1000);
+            $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
             $("#workshops").hide(1000);
             $("#idp").hide(1000);
@@ -293,12 +353,26 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "font-size": "3.2vw"
                   });
 
+               $("#gbc").animate({
+                  "text-align": "left"
+               });
+
                   $(".evemenu").animate({
                      "left":"0",
                      "width": "100%",
                      "font-size": "2.5vw",
                      "padding-top": "4%",
                      "padding-right": "80%"
+                  }, 500, function(){
+                     $("#gbcdescription").fadeIn(200);
+                     $("#gbcregistration").fadeIn(200);
+                     $("#gbcrules").fadeIn(200);
+                     $("#gbccontact").fadeIn(200);
+                     $("#gbccall").fadeIn(200);
+                     $("#gbcemail").fadeIn(200);
+                     $("#gbcphn").fadeIn(200);
+                     $("#gbcarchive").fadeIn(200);
+                     $("#gbcemailid").fadeIn(200);
                   });
             });
          });

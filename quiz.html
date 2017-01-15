@@ -24,17 +24,18 @@
 
 	}
 
-	#lectures {
+	#quiz {
 		top:0;   
 		left:0;   
-		background: red; 
+		background: grey; 
 	}
 
 	.firstletterinevents {
 		font-size: 3.2vw;
 	}
 
-	#lecturesregistration {
+	#quizregistration {
+		display: none;
 		position:absolute;
 		bottom:80%;
 		right:10%;
@@ -45,12 +46,13 @@
 		font-size: 1.5vw;
 	}
 
-	#lecturesregistration:hover {
+	#quizregistration:hover {
 		background-color: black;
-		color: red;
+		color: grey;
 	}
 
-	#lecturesrules{
+	#quizrules{
+		display: none;
 		position:absolute;
 		bottom:80%;
 		right:20%;
@@ -61,12 +63,13 @@
 		font-size: 1.5vw;
 	}
 
-	#lecturesrules:hover {
+	#quizrules:hover {
 		background-color: black;
-		color:red;
+		color: grey;
 	}
 
-	#lecturesarchive {
+	#quizarchive {
+		display: none;
 		position:absolute;
 		bottom:30%;
 		right:10%;
@@ -77,7 +80,8 @@
 		color: black;
 	}
 
-	#lecturesdescription {
+	#quizdescription {
+		display: none;
 		position: absolute;
 		top:25%;
 		left:2%;
@@ -89,7 +93,8 @@
 		font-size: 2.5vw;
 	}
 
-	#lecturescontact {
+	#quizcontact {
+		display: none;
 		position:absolute;
 		right:150px;
 		bottom:75px;
@@ -98,7 +103,8 @@
 		color: #000000;	
 	}
 
-	#lecturescall {
+	#quizcall {
+		display: none;
 		position: absolute;
 		bottom:10px;
 		right: 100px;
@@ -106,7 +112,8 @@
 		width: 30px;
 	}
 
-	#lecturesemail {
+	#quizemail {
+		display: none;
 		position: absolute;
 		bottom: 10px;
 		right:400px;
@@ -114,14 +121,16 @@
 		width: 30px;
 	}
 
-	#lecturesphn {
+	#quizphn {
+		display: none;
 		position:absolute;
 		bottom:15px;
 		right: -3px;
 		font-family: impact;
 	}
 
-	#lecturesemailid {
+	#quizemailid {
+		display: none;
 		position: absolute;
 		bottom: 15px;
 		right: 150px;
@@ -130,36 +139,32 @@
 	</style>
 </head>
 <body>
-	<div class="evemenu" id="lectures">
-		<div id="lecturesdescription">
-		<font size="6vw">
-		"Within the confines of the lecture hall, no other virtue exists but plain intellectual integrity" - Max Weber
-		</font>
+	<div class="evemenu" id="quiz">
+		<div id="quizdescription">
+		Curiosity killed the cat? Schrodinger disagrees. So do we.
 		<br><br>
-		<font size="5vw">
-		A platform where various renowned biotechnologists share their technical knowledge and life experiences.
-		</font>
+		Pose, Pause, Pounce, Bounce
 		</div>
-		<font class="firstletterinevents">L</font>ECTURES
-		<div id="lecturespage">
+		<font class="firstletterinevents">Q</font>UIZ
+			<div id="quizpage">
 			<a href="#">
-			<div id="lecturesregistration">
+			<div id="quizregistration">
 				Register
 			</div>
 			</a>
 			<a href="#">
-			<div id="lecturesrules">
+			<div id="quizrules">
 				Rules
 			</div>
 			</a>
-			<div id="lecturesarchive">
+			<div id="quizarchive">
 				<font>ARCHIVE. ADD RELEVANT IMAGE AND LINK</font>
 			</div>
-			<div id="lecturescontact">
-				<img id="lecturescall" src="Files/call-icon.png">
-				<div id="lecturesphn">9176416316</div>
-				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="lecturesemail" src="Files/email-icon.png"></a>
-				<div id="lecturesemailid">kaushik.iitmadras@gmail.com</div>
+			<div id="quizcontact">
+				<img id="quizcall" src="Files/call-icon.png">
+				<div id="quizphn">9176416316</div>
+				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="quizemail" src="Files/email-icon.png"></a>
+				<div id="quizemailid">kaushik.iitmadras@gmail.com</div>
 			</div>
 		</div>
 	</div>

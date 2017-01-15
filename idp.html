@@ -24,17 +24,18 @@
 
 	}
 
-	#lectures {
+	#idp {
 		top:0;   
 		left:0;   
-		background: red; 
+		background: grey; 
 	}
 
 	.firstletterinevents {
 		font-size: 3.2vw;
 	}
 
-	#lecturesregistration {
+	#idpregistration {
+		display: none;
 		position:absolute;
 		bottom:80%;
 		right:10%;
@@ -45,12 +46,13 @@
 		font-size: 1.5vw;
 	}
 
-	#lecturesregistration:hover {
+	#idpregistration:hover {
 		background-color: black;
-		color: red;
+		color: grey;
 	}
 
-	#lecturesrules{
+	#idprules{
+		display: none;
 		position:absolute;
 		bottom:80%;
 		right:20%;
@@ -61,12 +63,13 @@
 		font-size: 1.5vw;
 	}
 
-	#lecturesrules:hover {
+	#idprules:hover {
 		background-color: black;
-		color:red;
+		color: grey;
 	}
 
-	#lecturesarchive {
+	#idparchive {
+		display: none;
 		position:absolute;
 		bottom:30%;
 		right:10%;
@@ -77,7 +80,8 @@
 		color: black;
 	}
 
-	#lecturesdescription {
+	#idpdescription {
+		display: none;
 		position: absolute;
 		top:25%;
 		left:2%;
@@ -89,7 +93,8 @@
 		font-size: 2.5vw;
 	}
 
-	#lecturescontact {
+	#idpcontact {
+		display: none;
 		position:absolute;
 		right:150px;
 		bottom:75px;
@@ -98,7 +103,8 @@
 		color: #000000;	
 	}
 
-	#lecturescall {
+	#idpcall {
+		display: none;
 		position: absolute;
 		bottom:10px;
 		right: 100px;
@@ -106,7 +112,8 @@
 		width: 30px;
 	}
 
-	#lecturesemail {
+	#idpemail {
+		display: none;
 		position: absolute;
 		bottom: 10px;
 		right:400px;
@@ -114,14 +121,16 @@
 		width: 30px;
 	}
 
-	#lecturesphn {
+	#idpphn {
+		display: none;
 		position:absolute;
 		bottom:15px;
 		right: -3px;
 		font-family: impact;
 	}
 
-	#lecturesemailid {
+	#idpemailid {
+		display: none;
 		position: absolute;
 		bottom: 15px;
 		right: 150px;
@@ -130,36 +139,37 @@
 	</style>
 </head>
 <body>
-	<div class="evemenu" id="lectures">
-		<div id="lecturesdescription">
+	<div class="evemenu" id="idp">
+		<div id="idpdescription">
 		<font size="6vw">
-		"Within the confines of the lecture hall, no other virtue exists but plain intellectual integrity" - Max Weber
+		"The path from the test tube to the field is not a straight highway..."
 		</font>
 		<br><br>
 		<font size="5vw">
-		A platform where various renowned biotechnologists share their technical knowledge and life experiences.
+		Brainstorming and making an impact with novel solutions to real-world industrial problems.
+		Problems are posed by leading technocrats.
 		</font>
 		</div>
-		<font class="firstletterinevents">L</font>ECTURES
-		<div id="lecturespage">
+		<font class="firstletterinevents">I</font>NDUSTRIAL DEFINED PROBLEM (IDP)
+		<div id="idppage">
 			<a href="#">
-			<div id="lecturesregistration">
+			<div id="idpregistration">
 				Register
 			</div>
 			</a>
 			<a href="#">
-			<div id="lecturesrules">
+			<div id="idprules">
 				Rules
 			</div>
 			</a>
-			<div id="lecturesarchive">
+			<div id="idparchive">
 				<font>ARCHIVE. ADD RELEVANT IMAGE AND LINK</font>
 			</div>
-			<div id="lecturescontact">
-				<img id="lecturescall" src="Files/call-icon.png">
-				<div id="lecturesphn">9176416316</div>
-				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="lecturesemail" src="Files/email-icon.png"></a>
-				<div id="lecturesemailid">kaushik.iitmadras@gmail.com</div>
+			<div id="idpcontact">
+				<img id="idpcall" src="Files/call-icon.png">
+				<div id="idpphn">9176416316</div>
+				<a href="mailto:kaushik.iitmadras@gmail.com?Subject=Test%20Mail" target="_top"><img id="idpemail" src="Files/email-icon.png"></a>
+				<div id="idpemailid">kaushik.iitmadras@gmail.com</div>
 			</div>
 		</div>
 	</div>
