@@ -2,9 +2,10 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#showmenu").click(function(){ //Shows main menu
 
-         $("#showmenu").fadeOut(1000,function(){
+         $("#showmenu").hide(1000);
          $(".menu").fadeIn(1000);
-        });
+         $("#closebtn-mainmenu").fadeIn(1000);
+
 
       });
 
@@ -28,7 +29,6 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          //When events is clicked, shows events and hides everything else
          $("#eve").click(function(){
             $("#sym").hide(1000);
-            $("#reg").hide(1000);
             $("#spons").hide(1000);
             $("#cont").hide(1000);
             $("#team").hide(1000, function(){
@@ -37,23 +37,87 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   "width": "100%"
                }, 1000, function(){
                   $("#eve").fadeOut(1000);
-                  $(".evemenu").fadeIn(1000);
+                  $(".evemenu").fadeIn(1000, function(){
+                     $("closebtn-evemenu").fadeIn();
+                  });
                });
             });
+      });            
 
 
-            /*$("#eve").css({
-               "left": "0",
-               "display": "block",
-               "width": "100%"
-            }, 1000);*/
+         $("#cont").click(function(){
+            $("#sym").hide(1000);
+            $("#reg").hide(1000);
+            $("#spons").hide(1000);
+            $("#eve").hide(1000);
+            $("#team").hide(1000, function(){
+               $("#cont").animate({
+                  "left": "0",
+                  "width": "100%"
+               });
+            });
+      });
 
+         $("#team").click(function(){
+            $("#sym").hide(1000);
+            $("#reg").hide(1000);
+            $("#spons").hide(1000);
+            $("#eve").hide(1000);
+            $("#cont").hide(1000, function(){
+               $("#team").animate({
+                  "left": "0",
+                  "width": "100%"
+               });
+            });
+      });
+
+
+         //Redirect back to events menu from events pages
+         $(".backtoevemenufromforensicsfromforensics").click(function(){
+            $("#forensicsdescription").fadeOut(200);
+            $("#forensicsregistration").fadeOut(200);
+            $("#forensicsrules").fadeOut(200);
+            $("#forensicscontact").fadeOut(200);
+            $("#forensicscall").fadeOut(200);
+            $("#forensicsemail").fadeOut(200);
+            $("#forensicsphn").fadeOut(200);
+            $("#forensicsarchive").fadeOut(200);
+            $("#forensicsemailid").fadeOut(200, function(){
+
+               $(".evemenu").animate({
+                  "position": "fixed",
+                  "height": "100%",
+                  "font-size": "1.6vw",
+                  "padding-top": "300px"
+               });
+
+               $(".firstletterinevents").animate({
+                     "font-size": "2.5vw"
+               }, 500, function(){
+                  $(".evemenu").show(1000);
+
+                  $("#forensics").animate({
+                     "left": "0",
+                     "top": "0",
+                     "width": "11.11%",
+                     "padding-left": "1%",
+                     "text-align": "center"
+                  });
+
+                  $("#streax").animate({
+                     "left": "0",
+                     "top": "0",
+                     "width": "11.11%",
+                     "padding-left": "12.11%",
+                     "text-align": "center"
+                  });
+               });
+            }); 
          });
 
          //Shows Forensics page when clicked   
 
          $("#forensics").click(function(){
-
             $("#streax").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -72,6 +136,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      "padding-top": "4%",
                      "padding-right": "80%"
                   }, 500, function(){
+                        $(".backtoevemenufromforensics").fadeIn(200);
                         $("#forensicsdescription").fadeIn(200);
                         $("#forensicsregistration").fadeIn(200);
                         $("#forensicsrules").fadeIn(200);

@@ -8,6 +8,14 @@ body {
 
 /* Below CSS for Main Menu #MainMenuCSS */
 
+#closebtn-mainmenu {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left:5%;
+	top:5%;
+}
+
 #sym { 
 	top:0;  
 	left:0;  
@@ -39,16 +47,8 @@ body {
 #team {
 	 top:0;   
 	 left:80%;
-	 background:grey;
+	 background:green;
 	 text-align: center;
-}
-
-#backiconmenu {
-	display: none;
-	width:2%;
-	height:2%;
-	top: 2%;
-	left: 2%;
 }
 
 .menu {
@@ -86,6 +86,15 @@ body {
 
 .firstletterinevents {
 	font-size: 2.5vw;
+}
+
+#closebtn-evemenu {
+	display: none;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left:5%;
+	top:5%;
 }
 
 #forensics { 
@@ -149,7 +158,8 @@ body {
 	left:88.88%; 
 	background:pink; 
 	text-align: center;     
-} 
+}
+
 
 /* Below CSS for Symposium Menu #SymposiumMenuCSS */
 
@@ -293,6 +303,16 @@ body {
 		right: 150px;
 	}
 
+	.backtoevemenufromforensics {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
+}
+
 /* Below CSS for Streax Page #StreaxCSS */
 	#streaxregistration {
 		display: none;
@@ -395,6 +415,16 @@ body {
 		position: absolute;
 		bottom: 15px;
 		right: 150px;
+	}
+
+	.backtoevemenufromstreax {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
 	}
 
 	/* Below CSS for Paper and Poster Page #PaperAndPosterCSS */
@@ -1127,3 +1157,5 @@ body {
 		bottom: 15px;
 		right: 150px;
 	}
+
+	/* Below CSS for ContactUs Page #ContactUsCSS */

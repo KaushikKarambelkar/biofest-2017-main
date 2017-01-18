@@ -1,0 +1,100 @@
+body {
+	background-color: orange;	
+	font-family: impact;
+}
+
+#forensicsformtitle {
+	position: absolute;
+	left:10%;
+	top:10%;
+	font-size: 3.5vw;
+	color: white;
+	font-family: "Times New Roman";
+}
+
+#forensicsform {
+	position: absolute;
+	left:30%;
+	top:25%;
+}
+
+#forensicstm1 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+#forensicstm2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+#forensicstm3 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+#forensicstmmail {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+#forensicstmphn {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+#forensicssubmit {
+	position: absolute;
+	align-items: center;
+	width: 80%;
+	left: 50%;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid black;
+	border-radius: 30px;
+}
+
+#forensicssubmit:hover {
+	cursor:pointer;
+	background-color: black;
+	color:orange;
+	border: 3px solid orange;
+}
