@@ -101,63 +101,74 @@ body {
 	top:0;   
 	left:0;   
 	background:orange; 
-	text-align: center; 
+	padding-left: 1%;
 }
 
 #streax { 
 	top:0;
 	left:11.11%; 
 	background:blue; 
-	text-align: center;    
+	padding-left: 2%;    
 }
 
 #paperandposter { 
 	top:0;   
 	left:22.22%;  
 	background:green; 
-	text-align: center;   
+	padding-left: 2.4%;   
 }
 
 #lectures { 
 	top:0;   
 	left:33.33%; 
 	background:red; 
-	text-align: center;     
+	padding-left: 1.3%;     
 }
 
 #workshops { 
 	top:0;   
 	left:44.44%; 
 	background:purple; 
-	text-align: center;   
+	padding-left: 0.1%;   
 }
 
 #idp { 
 	top:0;   
 	left:55.55%; 
 	background:grey; 
-	text-align: center;     
+	padding-left: 0.8%;     
 } 
 
 #quiz { 
 	top:0;   
 	left:66.66%; 
 	background:brown; 
-	text-align: center;     
+	padding-left: 3%;     
 }
 
 #biobiz { 
 	top:0;   
 	left:77.77%; 
 	background:yellow; 
-	text-align: center;     
+	padding-left: 2.3%;     
 }   
 
 #gbc { 
 	top:0;   
 	left:88.88%; 
 	background:pink; 
-	text-align: center;     
+	padding-left: 0.5%;     
+}
+
+.backtoevemenu {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
 }
 
 
@@ -303,16 +314,6 @@ body {
 		right: 150px;
 	}
 
-	.backtoevemenufromforensics {
-	display: none;
-	position: absolute;
-	z-index: 9999;
-	height: 40px;
-	width: 40px;
-	left: 0;
-	top: 0;
-}
-
 /* Below CSS for Streax Page #StreaxCSS */
 	#streaxregistration {
 		display: none;
@@ -415,16 +416,6 @@ body {
 		position: absolute;
 		bottom: 15px;
 		right: 150px;
-	}
-
-	.backtoevemenufromstreax {
-	display: none;
-	position: absolute;
-	z-index: 9999;
-	height: 40px;
-	width: 40px;
-	left: 0;
-	top: 0;
 	}
 
 	/* Below CSS for Paper and Poster Page #PaperAndPosterCSS */
