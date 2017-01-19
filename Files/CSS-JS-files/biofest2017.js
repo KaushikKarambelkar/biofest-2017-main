@@ -1,33 +1,39 @@
 $(document).ready(function(){ //Activate script only when entire document is ready
 
-         $("#showmenu").click(function(){ //Shows main menu
+         $("#menubtn").click(function(){ //Shows main menu
 
-         $("#showmenu").hide(1000);
-         $(".menu").fadeIn(1000);
-         $("#closebtn-mainmenu").fadeIn(1000);
-
+         $(".menubtn").fadeOut();
+         $("#welcome_screen_div").fadeOut();
+         $(".menu").fadeIn();
+         $(".backtohomepage").fadeIn();
 
       });
 
+         $(".backtohomepage").click(function(){
+            $(".menu").hide(1000);
+            $("#welcome_screen_div").show(1000);
+            $(".backtohomepage").fadeOut();
+         });
+
          //When symposium is clicked, shows symposium and hides everything else  
          $("#sym").click(function(){
-            $("#sym").fadeOut(1000);
-            $("#eve").fadeOut(1000);
-            $("#reg").fadeOut(1000);
-            $("#spons").fadeOut(1000);
-            $("#cont").fadeOut(1000);
-            $("#team").fadeOut(1000);
-            $(".symmenu").fadeIn(1000);
-
-            /* $("#sym").css({
-               "display": "block",
-               "width": "100%"
-            }, 1000); */
-
-         });
+            $(".backtohomepage").fadeOut();
+            $("#eve").hide(1000);
+            $("#spons").hide(1000);
+            $("#cont").hide(1000);
+            $("#team").hide(1000, function(){
+               $("#sym").animate({
+                  "left": "0",
+                  "width": "100%"
+               }, 1000, function(){
+                  $(".backtomainmenufromsym").show(500);
+               });
+               });
+            });
 
          //When events is clicked, shows events and hides everything else
          $("#eve").click(function(){
+            $(".backtohomepage").fadeOut();
             $("#sym").hide(1000);
             $("#spons").hide(1000);
             $("#cont").hide(1000);
@@ -38,14 +44,31 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                }, 1000, function(){
                   $("#eve").fadeOut(1000);
                   $(".evemenu").fadeIn(1000, function(){
-                     $("closebtn-evemenu").fadeIn();
+                     $(".backtomainmenufromeve").show(500);
                   });
                });
             });
-      });            
+      });           
+
+         $("#spons").click(function(){
+            $(".backtohomepage").fadeOut();
+            $("#sym").hide(1000);
+            $("#reg").hide(1000);
+            $("#cont").hide(1000);
+            $("#eve").hide(1000);
+            $("#team").hide(1000, function(){
+               $("#spons").animate({
+                  "left": "0",
+                  "width": "100%"
+               }, 1000, function(){
+                  $(".backtomainmenufromspons").show(500);
+               });
+            });
+      });
 
 
          $("#cont").click(function(){
+            $(".backtohomepage").fadeOut();
             $("#sym").hide(1000);
             $("#reg").hide(1000);
             $("#spons").hide(1000);
@@ -54,11 +77,14 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                $("#cont").animate({
                   "left": "0",
                   "width": "100%"
+               }, 1000, function(){
+                  $(".backtomainmenufromcont").show(500);
                });
             });
       });
 
          $("#team").click(function(){
+            $(".backtohomepage").fadeOut();
             $("#sym").hide(1000);
             $("#reg").hide(1000);
             $("#spons").hide(1000);
@@ -67,9 +93,88 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                $("#team").animate({
                   "left": "0",
                   "width": "100%"
+               }, 1000, function(){
+                  $(".backtomainmenufromteam").show(500);
                });
             });
       });
+
+         $(".backtomainmenufromsym").click(function(){
+            $(".evemenu").hide(1000);
+            $(".menu").show(1000);
+            $(".backtomainmenufromsym").hide();
+
+            $("#sym").animate({
+               "width": "20%",
+               "left": "0%",
+               "top": "0",
+               "text-align": "center"
+            }, 500, function(){
+               $(".backtohomepage").fadeIn();
+            });
+         });
+
+         //Redirect back to main menu from events menu
+         $(".backtomainmenufromeve").click(function(){
+            $(".evemenu").hide(1000);
+            $(".menu").show(1000);
+            $(".backtomainmenufromeve").hide();
+
+            $("#eve").animate({
+               "width": "20%",
+               "left": "20%",
+               "top": "0",
+               "text-align": "center"
+            }, 500, function(){
+               $(".backtohomepage").fadeIn();
+            });
+         });
+
+         //Redirect back to main menu from spons
+         $(".backtomainmenufromspons").click(function(){
+            $(".evemenu").hide(1000);
+            $(".menu").show(1000);
+            $(".backtomainmenufromspons").hide();
+
+            $("#spons").animate({
+               "width": "20%",
+               "left": "40%",
+               "top": "0",
+               "text-align": "center"
+            }, 500, function(){
+               $(".backtohomepage").fadeIn();
+            });
+         });
+
+         $(".backtomainmenufromcont").click(function(){
+            $(".evemenu").hide(1000);
+            $(".menu").show(1000);
+            $(".backtomainmenufromcont").hide();
+
+            $("#cont").animate({
+               "width": "20%",
+               "left": "60%",
+               "top": "0",
+               "text-align": "center"
+            }, 500, function(){
+               $(".backtohomepage").fadeIn();
+            });
+         });
+
+         $(".backtomainmenufromteam").click(function(){
+            $(".evemenu").hide(1000);
+            $(".menu").show(1000);
+            $(".backtomainmenufromteam").hide();
+
+            $("#team").animate({
+               "width": "20%",
+               "left": "80%",
+               "top": "0",
+               "text-align": "center"
+            }, 500, function(){
+               $(".backtohomepage").fadeIn();
+            });
+         });
 
 
          //Redirect back to events menu from forensics page
@@ -251,9 +356,11 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   "text-align": "center"
                });
 
-               $(".backtoevemenufromforensics").fadeOut();
+               $(".backtoevemenu").fadeOut();
             }); 
          });
+
+         
 
          //Shows Forensics page when clicked   
 

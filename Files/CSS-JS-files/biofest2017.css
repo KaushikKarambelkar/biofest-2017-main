@@ -4,17 +4,184 @@ body {
  	padding:0%; 
  	color: white; 
  	font-family: impact
+ 	-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+}
+
+/* Below CSS for Home Page #HomePageCSS */
+
+#logo {
+	position:absolute;
+	top:20%;
+	left:35.5%;
+	width: 30%;
+}
+
+#socialmedia {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:2%;
+	right:2%;
+}
+
+#fb {
+	position:absolute;
+	bottom:3%;
+	right:2%;
+	width: 3%;
+}
+
+#yt {
+	position:absolute;
+	bottom:1%;
+	right:6%;
+	width: 5%;
+}
+
+#welcome_screen_div {
+    width:100%;
+    height:100%;
+    background-image: url('Files/NeuronsFiring.gif');
+    position:absolute;
+    top:0;left:0;
+    z-index:10;
+  }
+
+  #prevyrweb {
+    position:absolute;
+    bottom:5%;
+    right:15%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:100px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+
+    #prevyrweb:hover {
+    background-color: #008CBA;
+    color: white;
+          transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+
+#menubtn {
+    position:absolute;
+    bottom:30%;
+    right:70%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:50px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+
+  #menubtn:hover {
+    background-color: #008CBA;
+    color: white;
+          transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+
+#update {
+    position:absolute;
+    bottom:30%;
+    right:55%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:50px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+#update:hover {
+    background-color: #008CBA;
+    color: white;
+      transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+
+#blank1 {
+    position:absolute;
+    bottom:30%;
+    right:40%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:50px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+#blank1:hover {
+    background-color: #008CBA;
+    color: white;
+          transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+#blank2 {
+    position:absolute;
+    bottom:30%;
+    right:25%;
+    font-size:1vw;
+    background-color:#ecf0f1;
+    border:2px solid white;
+    border-radius:50px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+    color:#000000;
+  }
+#blank2:hover {
+    background-color: #008CBA;
+    color: white;
+          transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}
+
+#tagline
+{
+  font-family: "Impact", Times, serif;
+   
+    width:100%;
+    top:45%;
+    position:absolute;
+    text-align:center;
+    padding-top: 25px;
+    font-size:2.5vw;
+    color:#ffffff;
 }
 
 /* Below CSS for Main Menu #MainMenuCSS */
-
-#closebtn-mainmenu {
-	height: 40px;
-	width: 40px;
-	position: absolute;
-	left:5%;
-	top:5%;
-}
 
 #sym { 
 	top:0;  
@@ -61,6 +228,17 @@ body {
  	cursor:pointer;
  }
 
+ .backtohomepage {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
  .firstletterinmenu {
  	font-size: 3vw;
  }
@@ -75,6 +253,63 @@ body {
 */
 
 /* Below CSS for events menu #EventsMenuCSS */
+
+.backtomainmenufromeve {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
+ .backtomainmenufromsym {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
+ .backtomainmenufromspons {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
+ .backtomainmenufromcont {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
+ .backtomainmenufromteam {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+ }
+
+
 .evemenu {
 	display: none;
 	position:fixed; 
@@ -208,7 +443,7 @@ body {
 	background:green; 
 	text-align: center;   
 }
-
+	
 /* Below CSS for Forensics Page #ForensicsCSS */
 
 	#forensicsregistration {
