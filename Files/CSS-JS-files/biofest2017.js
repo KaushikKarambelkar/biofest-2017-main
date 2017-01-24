@@ -70,18 +70,37 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          $("#cont").click(function(){
             $(".backtohomepage").fadeOut();
             $("#sym").hide(1000);
-            $("#reg").hide(1000);
-            $("#spons").hide(1000);
             $("#eve").hide(1000);
+            $("#spons").hide(1000);
             $("#team").hide(1000, function(){
-               $("#cont").animate({
-                  "left": "0",
-                  "width": "100%"
-               }, 1000, function(){
-                  $(".backtomainmenufromcont").show(500);
+                  $(".firstletterinmenu").animate({
+                     "font-size": "3.2vw"
+                  });
+
+                  $(".menu").animate({
+                     "width": "100%",
+                     "font-size": "2.5vw",
+                     "left": "0",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  }, 500, function(){
+                        $(".backtomainmenufromcont").fadeIn(200);
+                        $("#contdescription").fadeIn(200);
+                        $("#contcontact1").fadeIn(200);
+                        $("#callcont1").fadeIn(200);
+                        $("#contcontact2").fadeIn(200);
+                        $("#callcont2").fadeIn(200);
+                        $("#contcontact3").fadeIn(200);
+                        $("#callcont3").fadeIn(200);
+                        $("#contphn1").fadeIn(200);
+                        $("#contphn2").fadeIn(200);
+                        $("#contphn3").fadeIn(200);
+                        $("#contemail").fadeIn(200);
+                        $("#contemailicon").fadeIn(200);
+                        $("#contemailid").fadeIn(200);
+                     });
+                  });
                });
-            });
-      });
 
          $("#team").click(function(){
             $(".backtohomepage").fadeOut();
@@ -90,6 +109,8 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#spons").hide(1000);
             $("#eve").hide(1000);
             $("#cont").hide(1000, function(){
+
+
                $("#team").animate({
                   "left": "0",
                   "width": "100%"
@@ -147,9 +168,25 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          });
 
          $(".backtomainmenufromcont").click(function(){
-            $(".evemenu").hide(1000);
-            $(".menu").show(1000);
-            $(".backtomainmenufromcont").hide();
+            $("#contdescription").fadeOut(200);
+            $("#contcontact1").fadeOut(200);
+            $("#callcont1").fadeOut(200);
+            $("#contcontact2").fadeOut(200);
+            $("#callcont2").fadeOut(200);
+            $("#contcontact3").fadeOut(200);
+            $("#callcont3").fadeOut(200);
+            $("#contphn1").fadeOut(200);
+            $("#contphn2").fadeOut(200);
+            $("#contphn3").fadeOut(200);
+            $("#contemail").fadeOut(200);
+            $("#contemailicon").fadeOut(200);
+            $("#contemailid").fadeOut(200);
+            $(".backtomainmenufromcont").hide(200);
+
+            $(".menu").animate({
+               "width": "100%"
+            });
+
 
             $("#cont").animate({
                "width": "20%",

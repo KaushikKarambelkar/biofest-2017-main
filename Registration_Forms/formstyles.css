@@ -1,0 +1,52 @@
+body {	
+	font-family: impact;
+}
+
+
+.regform {
+	position: absolute;
+	left:30%;
+	top:25%;
+}
+
+.formtitle {
+	position: absolute;
+	left:10%;
+	top:10%;
+	font-size: 3.5vw;
+	color: white;
+	font-family: "Times New Roman";
+}
+
+.formfield {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 150%;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+.formsubmit {
+	position: absolute;
+	align-items: center;
+	width: 80%;
+	left: 50%;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid black;
+	border-radius: 30px;
+}
+
+.formsubmitsubmit:hover {
+	cursor:pointer;
+	background-color: black;
+	color:orange;
+	border: 3px solid orange;
+}

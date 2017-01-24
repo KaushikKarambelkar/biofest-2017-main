@@ -33,14 +33,16 @@ background-attachment: fixed;
 	position:absolute;
 	bottom:3%;
 	right:2%;
-	width: 3%;
+	width: 50px;
+	height: 50px;
 }
 
 #yt {
 	position:absolute;
-	bottom:1%;
+	bottom:3%;
 	right:6%;
-	width: 5%;
+	width: 50px;
+	height: 50px;
 }
 
 #welcome_screen_div {
@@ -225,7 +227,6 @@ background-attachment: fixed;
  	width:20%; 
  	height:100%; 
  	padding-top: 300px;  
- 	cursor:pointer;
  }
 
  .backtohomepage {
@@ -384,14 +385,14 @@ background-attachment: fixed;
 #biobiz { 
 	top:0;   
 	left:77.77%; 
-	background:yellow; 
+	background:#ffd133; 
 	padding-left: 2.3%;     
 }   
 
 #gbc { 
 	top:0;   
 	left:88.88%; 
-	background:pink; 
+	background:#ff33da; 
 	padding-left: 0.5%;     
 }
 
@@ -416,32 +417,122 @@ background-attachment: fixed;
 	width:33.34%; 
 	height:100%; 
 	padding-top: 300px;
-	cursor: pointer;
 }
 
-.firstletterinsymmenu {
-	font-size: 3.7vw;
+/* Below CSS for ContactUs Page #ContactUsCSS */
+
+#contdescription{
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	right:50%;
+	top:40%;
 }
 
-#pan { 
-	top:0;   
-	left:0;   
-	background:red; 
-	text-align: center;  
+#contcontact1 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	right:45%;
+	top: 45%;
 }
 
-#wor { 
-	top:0;   
-	left:33.34%; 
-	background:blue; 
-	text-align: center;    
+#callcont1 {
+	display: none;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	right: 42%;
+	top: 45%;
 }
 
-#meve { 
-	top:0;   
-	left:66.67%;  
-	background:green; 
-	text-align: center;   
+#contcontact2 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	right:45%;
+	top: 50%;
+}
+
+#callcont2 {
+	display: none;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	right: 42%;
+	top:50%;
+}
+
+#contcontact3 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	right:45%;
+	top: 55%;
+}
+
+#callcont3 {
+	display: none;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	right: 42%;
+	top:55%;
+}
+
+#contphn1 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	height: 25px;
+	width: 25px;
+	right: 39%;
+	top:45%;
+}
+
+#contphn2 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	height: 25px;
+	width: 25px;
+	right: 39%;
+	top:50%;
+}
+
+#contphn3 {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	height: 25px;
+	width: 25px;
+	right: 39%;
+	top:55%;
+}
+
+#contemail {
+	display: none;
+	position: absolute;
+	right: 48%;
+	top: 62%;
+	font-size: 1.5vw;
+}
+
+#contemailicon {
+	display: none;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	right: 45%;
+	top: 62%;
+}
+
+#contemailid {
+	display: none;
+	position: absolute;
+	font-size: 1.5vw;
+	top: 62%;
+	right:26%;
 }
 	
 /* Below CSS for Forensics Page #ForensicsCSS */
@@ -495,7 +586,7 @@ background-attachment: fixed;
 	#forensicsdescription {
 		display: none;
 		position: absolute;
-		top:25%;
+		top:15%;
 		left:5%;
 		right:55%;
 		bottom: 20%;
@@ -529,7 +620,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right: 320px;
 		height: 30px;
 		width: 30px;
 	}
@@ -633,7 +724,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:300px;
 		height: 30px;
 		width: 30px;
 	}
@@ -738,7 +829,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:345px;
 		height: 30px;
 		width: 30px;
 	}
@@ -843,7 +934,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:315px;
 		height: 30px;
 		width: 30px;
 	}
@@ -947,7 +1038,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:330px;
 		height: 30px;
 		width: 30px;
 	}
@@ -1051,7 +1142,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:280px;
 		height: 30px;
 		width: 30px;
 	}
@@ -1155,7 +1246,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:290px;
 		height: 30px;
 		width: 30px;
 	}
@@ -1259,7 +1350,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:300px;
 		height: 30px;
 		width: 30px;
 	}
@@ -1364,7 +1455,7 @@ background-attachment: fixed;
 		display: none;
 		position: absolute;
 		bottom: 10px;
-		right:400px;
+		right:380px;
 		height: 30px;
 		width: 30px;
 	}
