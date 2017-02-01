@@ -150,6 +150,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   "left": "0",
                   "width": "100%"
                }, 1000, function(){
+                  $("#underconstruction_team").fadeIn();
                   $("#team_events").fadeIn();
                   $("#team_sponsorship").fadeIn();
                   $("#team_qmservices").fadeIn();
@@ -159,12 +160,50 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   $("#team_freq").fadeIn();
                   $("#team_webops").fadeIn();
                   $("#team_fontdetailsname").fadeIn();
+                  $("#team_fontdetailsposition").fadeIn();
                   $("#team_studenthead").fadeIn();
                   $(".team_studenthead").fadeIn();
                   $(".backtomainmenufromteam").show(500);
                });
             });
       });
+
+         $("#team_studenthead").hover(function(){
+            $("#team_studentheadphoto").show(100);
+            $(".team_studentheadphoto").show(100);
+         }, function(){
+            $("#team_studentheadphoto").hide(100);
+            $(".team_studentheadphoto").hide(100);
+         });
+
+         $("#team_webops").click(function(){
+
+            $("#team_events").fadeOut();
+            $("#team_sponsorship").fadeOut();
+            $("#team_qmservices").fadeOut();
+            $("#team_mnsrelations").fadeOut();
+            $("#team_financeteam").fadeOut();
+            $("#team_designmedia").fadeOut();
+            $("#team_freq").fadeOut();
+            $("#team_webops").fadeOut();
+            $("#team_fontdetailsname").fadeOut();
+            $("#team_fontdetailsposition").fadeOut();
+            $(".team_studenthead").fadeOut();
+
+            $("#team_studenthead").fadeOut(500, function(){
+
+
+               $("#team_webops_kaushik").fadeIn();
+               $("#team_webops_fontdetailsposition").fadeIn();
+               $("#team_webops_titlefont").fadeIn();
+               $("#team_webops_fontdetailsname").fadeIn();
+               $("#team_webops_title").fadeIn();
+               $(".team_webops_supercoord").fadeIn();
+               $(".team_webops_coord").fadeIn();
+               $("#team_webops_kaushik").fadeIn();
+
+            });
+         });
 
          $(".backtomainmenufromsym").click(function(){
 
@@ -377,6 +416,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#team_designmedia").fadeOut();
             $("#team_freq").fadeOut();
             $("#team_webops").fadeOut();
+            $("#team_fontdetailsposition").fadeOut();
             $("#team_fontdetailsname").fadeOut();
             $("#team_studenthead").fadeOut();
             $(".team_studenthead").fadeOut();
