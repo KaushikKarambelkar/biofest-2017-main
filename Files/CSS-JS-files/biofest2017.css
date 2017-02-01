@@ -225,7 +225,7 @@ body {
  	position:fixed; 
  	width:20%; 
  	height:100%; 
- 	padding-top: 300px;  
+ 	padding-top: 25%;  
  }
 
  .backtohomepage {
@@ -409,7 +409,7 @@ body {
 	width:11.11%; 
 	height:100%; 
 	font-size: 1.6vw;   
-	padding-top: 300px;
+	padding-top: 25%;
 }
 
 .firstletterinevents {
