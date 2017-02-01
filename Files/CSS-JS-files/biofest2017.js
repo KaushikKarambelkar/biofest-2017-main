@@ -10,8 +10,8 @@ $(document).ready(function(){ //Activate script only when entire document is rea
       });
 
          $(".backtohomepage").click(function(){
-            $(".menu").hide(1000);
-            $("#welcome_screen_div").show(1000);
+            $(".menu").hide(500);
+            $("#welcome_screen_div").fadeIn(1000);
             $(".backtohomepage").fadeOut();
          });
 
@@ -22,11 +22,28 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#spons").hide(1000);
             $("#cont").hide(1000);
             $("#team").hide(1000, function(){
+
+               $(".firstletterinmenu").animate({
+                  "font-size": "3.2vw"
+               });
+
                $("#sym").animate({
                   "left": "0",
-                  "width": "100%"
+                  "width": "100%",
+                  "padding-right": "80%",
+                  "padding-top": "4%",
+                  "font-size": "2.5vw"
                }, 1000, function(){
-                  $(".backtomainmenufromsym").show(500);
+                  $("#symimg").fadeIn();
+                  $("#symregister").fadeIn();
+                  $("#symbrochure").fadeIn();
+                  $("#symcontact1").fadeIn();
+                  $("#symcontact2").fadeIn();
+                  $("#symemail").fadeIn();
+
+                  $("#symdescription").fadeIn(500, function(){
+                  $(".backtomainmenufromsym").show();
+                  });
                });
                });
             });
@@ -57,6 +74,16 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#cont").hide(1000);
             $("#eve").hide(1000);
             $("#team").hide(1000, function(){
+
+               $(".menu").animate({
+                     "width": "100%",
+                     "font-size": "2.5vw",
+                     "left": "0",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
+
+               
                $("#spons").animate({
                   "left": "0",
                   "width": "100%"
@@ -110,28 +137,92 @@ $(document).ready(function(){ //Activate script only when entire document is rea
             $("#eve").hide(1000);
             $("#cont").hide(1000, function(){
 
+               $(".menu").animate({
+                     "width": "100%",
+                     "font-size": "2.5vw",
+                     "left": "0",
+                     "padding-top": "4%",
+                     "padding-right": "80%"
+                  });
+
 
                $("#team").animate({
                   "left": "0",
                   "width": "100%"
                }, 1000, function(){
+                  $("#team_events").fadeIn();
+                  $("#team_sponsorship").fadeIn();
+                  $("#team_qmservices").fadeIn();
+                  $("#team_mnsrelations").fadeIn();
+                  $("#team_financeteam").fadeIn();
+                  $("#team_designmedia").fadeIn();
+                  $("#team_freq").fadeIn();
+                  $("#team_webops").fadeIn();
+                  $("#team_fontdetailsname").fadeIn();
+                  $("#team_studenthead").fadeIn();
+                  $(".team_studenthead").fadeIn();
                   $(".backtomainmenufromteam").show(500);
                });
             });
       });
 
          $(".backtomainmenufromsym").click(function(){
-            $(".evemenu").hide(1000);
-            $(".menu").show(1000);
+
+            $("#symdescription").fadeOut();
+            $("#symimg").fadeOut();
+            $("#symregister").fadeOut();
+            $("#symbrochure").fadeOut();
+            $("#symcontact1").fadeOut();
+            $("#symcontact2").fadeOut();
+            $("#symemail").fadeOut();
             $(".backtomainmenufromsym").hide();
 
+            $(".menu").show();
             $("#sym").animate({
+               "left": "0",
                "width": "20%",
-               "left": "0%",
-               "top": "0",
-               "text-align": "center"
+               "text-align": "center", 
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px"
+            });
+
+            $("#eve").animate({
+               "left": "20%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "60px"
+            });
+
+            $("#spons").animate({
+               "left": "40%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#cont").animate({
+               "left": "60%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#team").animate({
+               "left": "80%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
             }, 500, function(){
-               $(".backtohomepage").fadeIn();
+               $(".backtohomepage").fadeIn(200);
             });
          });
 
@@ -153,63 +244,190 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          //Redirect back to main menu from spons
          $(".backtomainmenufromspons").click(function(){
-            $(".evemenu").hide(1000);
-            $(".menu").show(1000);
+
             $(".backtomainmenufromspons").hide();
+            $(".menu").show();
+            $("#sym").animate({
+               "left": "0",
+               "width": "20%",
+               "text-align": "center", 
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px"
+            });
+
+            $("#eve").animate({
+               "left": "20%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "60px"
+            });
 
             $("#spons").animate({
-               "width": "20%",
                "left": "40%",
-               "top": "0",
-               "text-align": "center"
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#cont").animate({
+               "left": "60%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#team").animate({
+               "left": "80%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
             }, 500, function(){
-               $(".backtohomepage").fadeIn();
+               $(".backtohomepage").fadeIn(200);
             });
          });
 
          $(".backtomainmenufromcont").click(function(){
-            $("#contdescription").fadeOut(200);
-            $("#contcontact1").fadeOut(200);
-            $("#callcont1").fadeOut(200);
-            $("#contcontact2").fadeOut(200);
-            $("#callcont2").fadeOut(200);
-            $("#contcontact3").fadeOut(200);
-            $("#callcont3").fadeOut(200);
-            $("#contphn1").fadeOut(200);
-            $("#contphn2").fadeOut(200);
-            $("#contphn3").fadeOut(200);
-            $("#contemail").fadeOut(200);
-            $("#contemailicon").fadeOut(200);
-            $("#contemailid").fadeOut(200);
-            $(".backtomainmenufromcont").hide(200);
 
-            $(".menu").animate({
-               "width": "100%"
+            $(".backtomainmenufromcont").hide();
+
+            $("#contdescription").fadeOut();
+
+            $("#callcontact1").fadeOut();
+            $("#callcont1").fadeOut();
+
+            $("#callcontact2").fadeOut();
+            $("#callcont2").fadeOut();
+
+            $("#callcontact3").fadeOut();
+            $("#callcont3").fadeOut();
+
+            $("#contphn1").fadeOut();
+            $("#contphn2").fadeOut();
+            $("#contphn3").fadeOut();
+
+            $("#contemail").fadeOut();
+            $("#contemailicon").fadeOut();
+            $("#contemailid").fadeOut();
+
+            $(".menu").show();
+            $("#sym").animate({
+               "left": "0",
+               "width": "20%",
+               "text-align": "center", 
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px"
             });
 
+            $("#eve").animate({
+               "left": "20%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "60px"
+            });
+
+            $("#spons").animate({
+               "left": "40%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
 
             $("#cont").animate({
-               "width": "20%",
                "left": "60%",
-               "top": "0",
-               "text-align": "center"
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#team").animate({
+               "left": "80%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
             }, 500, function(){
-               $(".backtohomepage").fadeIn();
+               $(".backtohomepage").fadeIn(200);
             });
          });
 
          $(".backtomainmenufromteam").click(function(){
-            $(".evemenu").hide(1000);
-            $(".menu").show(1000);
+
+            $("#team_events").fadeOut();
+            $("#team_sponsorship").fadeOut();
+            $("#team_qmservices").fadeOut();
+            $("#team_mnsrelations").fadeOut();
+            $("#team_financeteam").fadeOut();
+            $("#team_designmedia").fadeOut();
+            $("#team_freq").fadeOut();
+            $("#team_webops").fadeOut();
+            $("#team_fontdetailsname").fadeOut();
+            $("#team_studenthead").fadeOut();
+            $(".team_studenthead").fadeOut();
+
             $(".backtomainmenufromteam").hide();
+            $(".menu").show();
+            $("#sym").animate({
+               "left": "0",
+               "width": "20%",
+               "text-align": "center", 
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px"
+            });
+
+            $("#eve").animate({
+               "left": "20%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "60px"
+            });
+
+            $("#spons").animate({
+               "left": "40%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
+
+            $("#cont").animate({
+               "left": "60%",
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
+            });
 
             $("#team").animate({
-               "width": "20%",
                "left": "80%",
-               "top": "0",
-               "text-align": "center"
+               "width": "20%",
+               "text-align": "center",
+               "font-size": "2vw",
+               "padding-top": "300px",
+               "padding-left": "45px" 
             }, 500, function(){
-               $(".backtohomepage").fadeIn();
+               $(".backtohomepage").fadeIn(200);
             });
          });
 
@@ -217,6 +435,8 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          //Redirect back to events menu from forensics page
 
          $(".backtoevemenu").click(function(){
+
+            $(".backtoevemenu").fadeOut();
 
             $("#gbcdescription").fadeOut(200);
             $("#gbcregistration").fadeOut(200);
@@ -392,8 +612,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   "padding-left": "0.5%",
                   "text-align": "center"
                });
-
-               $(".backtoevemenu").fadeOut();
+               $(".backtomainmenufromeve").fadeIn();
             }); 
          });
 
@@ -402,6 +621,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          //Shows Forensics page when clicked   
 
          $("#forensics").click(function(){
+            $(".backtomainmenufromeve").hide();
             $("#streax").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -428,7 +648,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                         $("#forensicscall").fadeIn(200);
                         $("#forensicsemail").fadeIn(200);
                         $("#forensicsphn").fadeIn(200);
-                        $("#forensicsarchive").fadeIn(200);
+                        //$("#forensicsarchive").fadeIn(200);
                         $("#forensicsemailid").fadeIn(200);
                      });
                   });
@@ -437,6 +657,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
          //Shows streax page when clicked
 
          $("#streax").click(function(){
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -464,7 +685,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#streaxcall").fadeIn(200);
                      $("#streaxemail").fadeIn(200);
                      $("#streaxphn").fadeIn(200);
-                     $("#streaxarchive").fadeIn(200);
+                     //$("#streaxarchive").fadeIn(200);
                      $("#streaxemailid").fadeIn(200);
                   });
             });
@@ -474,6 +695,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#paperandposter").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#streax").hide(1000);
             $("#lectures").hide(1000);
@@ -501,7 +723,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#paperandpostercall").fadeIn(200);
                      $("#paperandposteremail").fadeIn(200);
                      $("#paperandposterphn").fadeIn(200);
-                     $("#paperandposterarchive").fadeIn(200);
+                     //$("#paperandposterarchive").fadeIn(200);
                      $("#paperandposteremailid").fadeIn(200);
                   });
             });
@@ -511,6 +733,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#lectures").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#streax").hide(1000);
@@ -538,7 +761,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#lecturescall").fadeIn(200);
                      $("#lecturesemail").fadeIn(200);
                      $("#lecturesphn").fadeIn(200);
-                     $("#lecturesarchive").fadeIn(200);
+                     //$("#lecturesarchive").fadeIn(200);
                      $("#lecturesemailid").fadeIn(200);
                   });
             });
@@ -548,6 +771,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#workshops").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -575,7 +799,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#workshopscall").fadeIn(200);
                      $("#workshopsemail").fadeIn(200);
                      $("#workshopsphn").fadeIn(200);
-                     $("#workshopsarchive").fadeIn(200);
+                     //$("#workshopsarchive").fadeIn(200);
                      $("#workshopsemailid").fadeIn(200);
                   });
             });
@@ -585,6 +809,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#idp").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -612,7 +837,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#idpcall").fadeIn(200);
                      $("#idpemail").fadeIn(200);
                      $("#idpphn").fadeIn(200);
-                     $("#idparchive").fadeIn(200);
+                     //$("#idparchive").fadeIn(200);
                      $("#idpemailid").fadeIn(200);
                   });
             });
@@ -622,6 +847,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#quiz").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -649,7 +875,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#quizcall").fadeIn(200);
                      $("#quizemail").fadeIn(200);
                      $("#quizphn").fadeIn(200);
-                     $("#quizarchive").fadeIn(200);
+                     //$("#quizarchive").fadeIn(200);
                      $("#quizemailid").fadeIn(200);
                   });
             });
@@ -659,6 +885,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#biobiz").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -686,7 +913,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#biobizcall").fadeIn(200);
                      $("#biobizemail").fadeIn(200);
                      $("#biobizphn").fadeIn(200);
-                     $("#biobizarchive").fadeIn(200);
+                     //$("#biobizarchive").fadeIn(200);
                      $("#biobizemailid").fadeIn(200);
                   });
             });
@@ -696,6 +923,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
 
          $("#gbc").click(function(){
 
+            $(".backtomainmenufromeve").hide();
             $("#forensics").hide(1000);
             $("#paperandposter").hide(1000);
             $("#lectures").hide(1000);
@@ -728,7 +956,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                      $("#gbcemail").fadeIn(200);
                      $("#gbcphn").fadeIn(200);
                      $("#gbcarchive").fadeIn(200);
-                     $("#gbcemailid").fadeIn(200);
+                     //$("#gbcemailid").fadeIn(200);
                   });
             });
          });

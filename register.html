@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Files/CSS-JS-Files/biofest2017.css">
+	<title></title>
+	<style type="text/css">
+.backtomainmenufromcont {
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	z-index: 9999;
+	height: 40px;
+	width: 40px;
+}
+
+#cont {
+	padding-left: 10%;
+	padding-top: 4%;
+	font-size: 2.5vw;
+	background-color: green;
+}
+
+.register {
+	position: relative;
+	top:20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 50%;
+}
+
+.registerlabel {
+	position: relative;
+	top: 20px;
+	font-size: 1.3vw;
+	margin-right: 20px;
+}
+
+#submitbtn {
+	position: relative;
+	left: 16%;
+	width: 20%;
+	text-align: center;	
+}
+
+#submitbtn:hover {
+	background-color: black;
+	color:green;
+	cursor: pointer;
+}
+
+#contactus {
+	position: absolute;
+	bottom: 10%;
+	font-size: 1.3vw;
+}
+
+#faq {
+	position: absolute;
+	bottom: 5%;
+	font-size: 1.3vw;
+}
+</style>
+</head>
+<body bgcolor="green">
+	<div class="backtomainmenufromcont"><img class="backtomainmenufromcont" src="Files/back-icon.png"></div>
+	<div class="menu" id="cont">
+	<font class="firstletterinmenu">R</font>EGISTER
+	<form action="Registration_Forms/register.php" method="post">
+		<input class="register" type="text" name="name" placeholder="Your Good Name?">
+		<br>
+		<input class="register" type="text" name="college" placeholder="Which School/College Are You From?">
+		<br>
+		<input class="register" type="text" name="phn" placeholder="Your Phone Number?">
+		<br>
+		<input class="register" type="email" name="email" placeholder="Your E-mail Id?">
+		<br>
+		<input class="register" type="text" name="events" placeholder="Which events are you attending?">
+		<br>
+		<input class="register" type="text" name="accommodation" placeholder="Want Accommodation (Yes/No)?">
+		<br>
+		<input id="submitbtn" class="register" type="submit" name="submitbtn">
+	</form>
+	<font id="contactus">For accommodation and other queries contact us <a href="IDP_PS.pdf" target="_blank">here</a></font>
+	<font id="faq">For FAQs about accommodation click <a href="#" target="_blank">here</a></font>
+	</div>
+</html>	
