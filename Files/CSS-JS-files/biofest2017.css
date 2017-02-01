@@ -3,13 +3,12 @@ body {
  	margin:0; 
  	padding:0%; 
  	color: white; 
- 	font-family: impact
- 	-moz-background-size: cover;
--webkit-background-size: cover;
-background-size: cover;
-background-position: top center !important;
-background-repeat: no-repeat !important;
-background-attachment: fixed;
+ 	background-repeat: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 /* Below CSS for Home Page #HomePageCSS */
@@ -175,7 +174,7 @@ background-attachment: fixed;
   font-family: "Impact", Times, serif;
    
     width:100%;
-    top:47%;
+    top:49%;
     position:absolute;
     text-align:center;
     padding-top: 25px;
@@ -429,7 +428,7 @@ background-attachment: fixed;
 #forensics { 
 	top:0;   
 	left:0;   
-	background-image: url("Events-Backgrounds/Forensics.png"); 
+	background-image:url("Events-Backgrounds/Forensics.png"); 
 	padding-left: 1%;
 }
 

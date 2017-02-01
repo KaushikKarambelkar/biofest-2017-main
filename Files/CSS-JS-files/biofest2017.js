@@ -88,6 +88,7 @@ $(document).ready(function(){ //Activate script only when entire document is rea
                   "left": "0",
                   "width": "100%"
                }, 1000, function(){
+                  $("#underconstruction_spons").fadeIn();
                   $(".backtomainmenufromspons").show(500);
                });
             });
