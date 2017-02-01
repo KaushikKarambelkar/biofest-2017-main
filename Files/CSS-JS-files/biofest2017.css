@@ -3,9 +3,7 @@ body {
  	margin:0; 
  	padding:0%; 
  	color: white; 
- 	background-repeat: no-repeat; 
- 	background-position: center;
- 	background-attachment: fixed; 
+ 	background-repeat: no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,7 +227,7 @@ body {
 #team {
 	 top:0;   
 	 left:80%;
-	 background-image: url("Mainmenu-Backgrounds/webpagebackground1.png");
+	 background: green;
 	 text-align: center;
 }
 
