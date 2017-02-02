@@ -199,35 +199,35 @@ body {
 #sym { 
 	top:0;  
 	left:0;  
-	background:orange;
+	background-image: url("Mainmenu-Backgrounds/symposium.png");
 	text-align: center;  
 }
 
 #eve {
  	top:0;
  	left:20%;
- 	background:blue;
+ 	background-image: url("Mainmenu-Backgrounds/Events.png");
  	text-align: center;
 }
 
 #spons { 
 	top:0;   
 	left:40%; 
-	background:red; 
+ 	background-image: url("Mainmenu-Backgrounds/sponsors.png");
 	text-align: center;
 }
 
 #cont { 
 	top:0;
 	left:60%; 
-	background:purple; 
+ 	background-image: url("Mainmenu-Backgrounds/Contact-Us.png");
 	text-align: center;   
 }
 
 #team {
 	 top:0;   
 	 left:80%;
-	 background: green;
+ 	background-image: url("Mainmenu-Backgrounds/theteam.png");
 	 text-align: center;
 }
 
@@ -700,7 +700,7 @@ body {
 	position: absolute;
 	font-size: 1.5vw;
 	top: 62%;
-	right:26%;
+	right:28%;
 }
 /*
  .register {
